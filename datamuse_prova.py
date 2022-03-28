@@ -23,4 +23,6 @@ else:
 url= 'https://api.datamuse.com/words?' + filter + keyword + '&max=10'
 response = requests.get(url)  
 dataFromDatamuse = json.loads(response.text) 
-st.write(dataFromDatamuse)
+
+for eachentry in dataFromDatamuse:
+  st.write('-',eachentry['word'])
