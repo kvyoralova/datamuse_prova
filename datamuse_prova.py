@@ -25,4 +25,4 @@ response = requests.get(url)
 dataFromDatamuse = json.loads(response.text) 
 
 for eachentry in dataFromDatamuse:
-  st.write('These are the first ten matches:', \n, '-',eachentry['word'])
+  st.write('These are the first ten matches:', '\n', '-',eachentry['word'])
