@@ -1,4 +1,5 @@
 import json,requests
+import streamlit as st
 from pprint import pprint
 
 keyword = st.text_input('GIve me a word', 'word')
