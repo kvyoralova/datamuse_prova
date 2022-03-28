@@ -24,6 +24,6 @@ url= 'https://api.datamuse.com/words?' + filter + keyword + '&max=10'
 response = requests.get(url)  
 dataFromDatamuse = json.loads(response.text) 
 
+st.write('These are the first ten matches:')
 for eachentry in dataFromDatamuse:
-  st.write('These are the first ten matches:')
   st.write('-',eachentry['word'])
